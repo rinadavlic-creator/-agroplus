@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #2A3338;
+  background-color: #ffffff;
+  line-height: 1.6;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Шапка */
+.header {
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 1rem 0;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.logo img {
+  height: 55px;
+  width: auto;
+  display: block;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #2A3338;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.nav a:hover {
+  color: #4EC0D5;
+}
+
+.btn {
+  background: #4EC0D5;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  background: #3AA9C0;
+}
+
+.consult-btn {
+  background: #2A3338;
+  padding: 0.7rem 1.4rem;
+}
+
+.consult-btn:hover {
+  background: #1F272C;
+}
+
+/* Карточки */
+.main {
+  padding: 3rem 0;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  max-height: 120px;
+  object-fit: contain;
+  object-position: center;
+  background: white;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.card-content {
+  padding: 1.5rem;
+}
+
+.card-content h3 {
+  color: #2A3338;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.card-content p {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.card-content ul {
+  list-style: none;
+  margin: 0.5rem 0;
+  padding: 0;
+}
+
+.card-content li {
+  margin: 0.4rem 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Блок "О компании" */
+.about-section {
+  padding: 4rem 0;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  color: #2A3338;
+}
+
+.about-section p {
+  margin: 1rem auto;
+  max-width: 800px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* Форма */
+.consult-section {
+  padding: 4rem 0;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.consult-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2A3338;
+}
+
+.consult-section p {
+  margin-bottom: 2rem;
+  color: #666;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.consult-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  background: white;
+  border: 2px solid #2A3338;
+  border-radius: 10px;
+}
+
+.consult-form input {
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.consult-form input:focus {
+  border-color: #4EC0D5;
+}
+
+/* Слайдер */
+.slider-section {
+  padding: 4rem 0;
+  background: white;
+  text-align: center;
+}
+
+.slider-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2A3338;
+}
+
+.slider-section p {
+  margin-bottom: 2rem;
+  color: #666;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slider {
+  display: flex;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  max-width: 900px;
+  margin: 0 auto;
+  height: 350px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.slide {
+  min-width: 100%;
+  flex-shrink: 0;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.nav-btn {
+  background: #2A3338;
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-btn:hover {
+  background: #1F272C;
+}
+
+/* Футер */
+.footer {
+  text-align: center;
+  padding: 1.5rem 0;
+  background: #f5f5f5;
+  color: #666;
+  font-size: 0.95rem;
+  margin-top: 2rem;
+}
+
+/* Мобильная адаптация */
+@media (max-width: 768px) {
+  .header .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav ul {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card img {
+    max-height: 100px;
+  }
+
+  .slider {
+    height: 250px;
+  }
+}
