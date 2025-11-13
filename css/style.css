@@ -25,6 +25,8 @@ body {
   background: white;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   padding: 1rem 0;
+  position: relative;
+  z-index: 100;
 }
 
 .header .container {
@@ -36,9 +38,19 @@ body {
 }
 
 .logo img {
-  height: 55px;
+  height: 80px;
   width: auto;
   display: block;
+  padding: 10px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.05);
 }
 
 .nav ul {
@@ -87,9 +99,31 @@ body {
   background: #1F272C;
 }
 
+/* Фоновый логотип */
+.background-logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.05; /* Прозрачность */
+}
+
+.background-logo img {
+  width: 80%;
+  height: auto;
+  object-fit: contain;
+}
+
 /* Карточки */
 .main {
   padding: 3rem 0;
+  position: relative;
+  z-index: 10;
 }
 
 .cards-grid {
@@ -155,6 +189,8 @@ body {
   padding: 4rem 0;
   background: #f9f9f9;
   text-align: center;
+  position: relative;
+  z-index: 10;
 }
 
 .about-section h2 {
@@ -175,6 +211,8 @@ body {
   padding: 4rem 0;
   background: #f9f9f9;
   text-align: center;
+  position: relative;
+  z-index: 10;
 }
 
 .consult-section h2 {
@@ -199,121 +237,4 @@ body {
   gap: 1rem;
   padding: 2rem;
   background: white;
-  border: 2px solid #2A3338;
-  border-radius: 10px;
-}
-
-.consult-form input {
-  padding: 0.8rem;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 1rem;
-  outline: none;
-}
-
-.consult-form input:focus {
-  border-color: #4EC0D5;
-}
-
-/* Слайдер */
-.slider-section {
-  padding: 4rem 0;
-  background: white;
-  text-align: center;
-}
-
-.slider-section h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #2A3338;
-}
-
-.slider-section p {
-  margin-bottom: 2rem;
-  color: #666;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.slider {
-  display: flex;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-  max-width: 900px;
-  margin: 0 auto;
-  height: 350px;
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-}
-
-.slide {
-  min-width: 100%;
-  flex-shrink: 0;
-}
-
-.slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.slider-nav {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 2rem;
-}
-
-.nav-btn {
-  background: #2A3338;
-  color: white;
-  border: none;
-  width: 40px;
-  height: 40px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1.2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.nav-btn:hover {
-  background: #1F272C;
-}
-
-/* Футер */
-.footer {
-  text-align: center;
-  padding: 1.5rem 0;
-  background: #f5f5f5;
-  color: #666;
-  font-size: 0.95rem;
-  margin-top: 2rem;
-}
-
-/* Мобильная адаптация */
-@media (max-width: 768px) {
-  .header .container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .nav ul {
-    justify-content: center;
-    gap: 1rem;
-  }
-
-  .cards-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .card img {
-    max-height: 100px;
-  }
-
-  .slider {
-    height: 250px;
-  }
-}
+ 
