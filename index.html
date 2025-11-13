@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>АгроПлюс — Техника, запчасти, сервис</title>
+  <!-- Только нужные веса шрифта -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -26,16 +28,12 @@
     </div>
   </header>
 
-  <!-- Фоновый логотип -->
-  <div class="background-logo">
-    <img src="images/logo.png" alt="АгроПлюс — Техника, запчасти, сервис">
-  </div>
-
   <!-- Каталог -->
   <main id="main" class="main">
     <div class="container" id="catalog">
       <div class="cards-grid">
 
+        <!-- Карточка CHCNAV -->
         <div class="card">
           <img src="images/chcnav-logo.png" alt="CHCNAV">
           <div class="card-content">
@@ -46,10 +44,11 @@
               <li>Обучение операторов</li>
               <li>Гарантия и обслуживание</li>
             </ul>
-            <button class="btn">Подробнее</button>
+            <a href="https://www.chcnav.com/" target="_blank" class="btn">Подробнее</a>
           </div>
         </div>
 
+        <!-- Карточка Agrokraft -->
         <div class="card">
           <img src="images/agrokraft-logo.png" alt="Agrokraft">
           <div class="card-content">
@@ -60,10 +59,11 @@
               <li>Сеялки</li>
               <li>Посевные комплексы ST PROFFIT</li>
             </ul>
-            <button class="btn">Подробнее</button>
+            <a href="https://agro-kraft.ru/catalog" target="_blank" class="btn">Подробнее</a>
           </div>
         </div>
 
+        <!-- Карточка: Комбайн New Age 9166 -->
         <div class="card">
           <img src="images/combine.png" alt="Комбайн New Age 9166">
           <div class="card-content">
@@ -74,10 +74,11 @@
               <li>Бункер: 12 тонн</li>
               <li>До 10 га/час</li>
             </ul>
-            <button class="btn">Подробнее</button>
+            <a href="combine.html" class="btn">Подробнее</a>
           </div>
         </div>
 
+        <!-- Карточка: Обработка почвы -->
         <div class="card">
           <img src="images/soil-cultivation.png" alt="Обработка почвы">
           <div class="card-content">
@@ -87,7 +88,27 @@
               <li>Глубокорыхлители</li>
               <li>Комбинированные агрегаты</li>
             </ul>
-            <button class="btn">Подробнее</button>
+            <a href="soil-cultivation.html" class="btn">Подробнее</a>
+          </div>
+        </div>
+
+        <!-- Карточка: Самоходный опрыскиватель -->
+        <div class="card">
+          <img src="images/Opriskivat.png" alt="Самоходный опрыскиватель">
+          <div class="card-content">
+            <h3>САМОХОДНЫЙ ОПРЫСКИВАТЕЛЬ</h3>
+            <p>Внесение любых типов пестицидов, жидких комплексных удобрений и баковых смесей при работе на зерновых и пропашных культурах.</p>
+            <a href="sprayer.html" class="btn">Подробнее</a>
+          </div>
+        </div>
+
+        <!-- Карточка: Кормоуборочный комбайн Jotec -->
+        <div class="card">
+          <img src="images/jotec.png" alt="Кормоуборочный комбайн Jotec">
+          <div class="card-content">
+            <h3>КОРМОУБОРОЧНЫЙ КОМБАЙН JOTEC</h3>
+            <p>Качество корма превыше всего! Высокая производительность и экономичность за счёт большого измельчающего барабана.</p>
+            <a href="jotec.html" class="btn">Подробнее</a>
           </div>
         </div>
 
@@ -100,10 +121,10 @@
     <div class="container">
       <h2>О компании</h2>
       <p>
-        ООО «АгроПлюс» работает на рынке продаж с 2012 года. Основным направлением нашей работы является обеспечение сельскохозяйственных предприятий современной, качественной и высокопроизводительной техникой, снабжение запчастями и комплектующими, обеспечение сервисного обслуживания.
+        Компания «АГРОКРАФТ РУС» работает на рынке продаж с 2012 г. Основным направлением нашей работы является обеспечение сельскохозяйственных предприятий современной, качественной и высокопроизводительной техникой, снабжение запчастями и комплектующими, обеспечение сервисного обслуживания.
       </p>
       <p>
-        Мы специализируемся на установке автопилотов, продаже сельхозтехники и почвообрабатывающих орудий, включая продукцию компании Agrokraft.
+        ООО «АгроПлюс» — ваш надёжный партнёр в Уфе. Мы реализуем технику, устанавливаем автопилоты и оказываем сервисное сопровождение по всей Башкирии.
       </p>
       <button class="btn">Подробнее</button>
     </div>
@@ -119,26 +140,6 @@
         <input type="tel" placeholder="Ваш телефон" required>
         <button type="submit" class="btn">Отправить</button>
       </form>
-    </div>
-  </section>
-
-  <!-- Слайдер -->
-  <section class="slider-section">
-    <div class="container">
-      <h2>Техника в полях</h2>
-      <p>Профессиональная сельскохозяйственная техника в реальных условиях эксплуатации</p>
-      <div class="slider" id="slider">
-        <div class="slide">
-          <img src="https://images.unsplash.com/photo-1600857253147-24719db4c334?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Трактор в поле">
-        </div>
-        <div class="slide">
-          <img src="https://images.unsplash.com/photo-1601133862892-9f5b5a5a4d5a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Комбайн на уборке">
-        </div>
-      </div>
-      <div class="slider-nav">
-        <button class="nav-btn prev">❮</button>
-        <button class="nav-btn next">❯</button>
-      </div>
     </div>
   </section>
 
